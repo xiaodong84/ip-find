@@ -6,7 +6,7 @@
 ```bash
 go build ip.go
 ./ip
-```bash
+```
 
 
 # License
