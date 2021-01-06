@@ -1,6 +1,12 @@
 # Wiki
 
 - 用于发现和更新IP地址服务
+- 使用方法如下：
+
+```bash
+go build ip.go
+./ip
+```bash
 
 
 # License
