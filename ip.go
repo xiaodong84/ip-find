@@ -22,6 +22,7 @@ func SetIP(w http.ResponseWriter, r *http.Request) {
 	IP = strings.Split(r.RemoteAddr, ":")[0]
 	fmt.Fprintln(w, "Successful")
 	log.Printf("IP Address Update Success,Current IP [%s] \n", IP)
+	log.Println(r.UserAgent())
 }
 
 func main() {
