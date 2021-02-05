@@ -15,6 +15,7 @@ func GetIP(w http.ResponseWriter, r *http.Request) {
 
 	fmt.Fprintln(w, IP)
 	log.Printf("%s: 获取了IP", strings.Split(r.RemoteAddr, ":")[0])
+	log.Println(r.UserAgent())
 }
 
 //SetIP 用于更新IP
